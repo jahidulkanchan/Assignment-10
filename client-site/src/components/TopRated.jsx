@@ -6,7 +6,7 @@ import ReviewCard from "./ReviewCard";
 
 
 const TopRated = ({reviewData}) => {
-  const topRatedGames = reviewData?.sort((a, b) => parseFloat(b.rating) - parseFloat(a.rating)).slice(0, 6);
+  const topRatedGames = reviewData?.sort((a, b) => parseFloat(b.rating) - parseFloat(a.rating)).slice(0, 8);
    
   return (
     <>
@@ -19,7 +19,7 @@ const TopRated = ({reviewData}) => {
           Rated Games
         </h2>
         </div>
-        <div data-aos="fade-up" className="grid gap-5 lg:gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+        <div data-aos="fade-up" className="grid gap-5 lg:gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
           {topRatedGames?.map((review) => (
             <ReviewCard review={review} key={review._id}></ReviewCard>
           ))}

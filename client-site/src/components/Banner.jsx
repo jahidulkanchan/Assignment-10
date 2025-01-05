@@ -22,12 +22,12 @@ const Banner = () => {
   };
   return (
     <>
-      <section className="px-2 md:px-5 pt-[120px] pb-8">
+      <section className="pt-[90px] pb-8">
         <Slider className="mx-auto" {...settings}>
           <div>
             <div className="grid mb-10 items-center shadow md:shadow-xl grid-cols-12">
               <div className="col-span-12 md:col-span-7 lg:col-span-8">
-                <img className="shadow w-full md:shadow-xl h-[200px] sm:h-[280px] md:h-[350px] lg:h-[400px]" src={Slide1} alt="Slide_Banner"/>
+                <img className="shadow w-full md:shadow-xl h-[200px] sm:h-[280px] md:h-[350px] lg:h-[450px]" src={Slide1} alt="Slide_Banner"/>
               </div>
               <div className="col-span-12 md:col-span-5 lg:col-span-4 p-5 ">
                 <h2 className="text-2xl font-bold mb-2 md:mb-4">Doom Eternal</h2>
@@ -55,7 +55,7 @@ const Banner = () => {
           <div>
             <div className="grid mb-10 items-center shadow md:shadow-xl grid-cols-12">
               <div className="col-span-12 md:col-span-7 lg:col-span-8">
-                <img className="shadow w-full md:shadow-xl h-[200px] sm:h-[280px] md:h-[350px] lg:h-[400px]" src={Slide2} alt="Slide_Banner"/>
+                <img className="shadow w-full md:shadow-xl h-[200px] sm:h-[280px] md:h-[350px] lg:h-[450px]" src={Slide2} alt="Slide_Banner"/>
               </div>
               <div className="col-span-12 md:col-span-5 lg:col-span-4 p-5 ">
                 <h2 className="text-2xl font-bold mb-2 md:mb-4">The Witcher 3: Wild Hunt</h2>
@@ -82,7 +82,7 @@ const Banner = () => {
           <div>
             <div className="grid mb-10 items-center shadow md:shadow-xl grid-cols-12">
               <div className="col-span-12 md:col-span-7 lg:col-span-8">
-                <img className="shadow w-full md:shadow-xl h-[200px] sm:h-[280px] md:h-[350px] lg:h-[400px]" src={Slide3} alt="Slide_Banner"/>
+                <img className="shadow w-full md:shadow-xl h-[200px] sm:h-[280px] md:h-[350px] lg:h-[450px]" src={Slide3} alt="Slide_Banner"/>
               </div>
               <div className="col-span-12 md:col-span-5 lg:col-span-4 p-5 ">
                 <h2 className="text-2xl font-bold mb-2 md:mb-4">Red Dead Redemption 2</h2>
@@ -109,7 +109,7 @@ const Banner = () => {
           <div>
             <div className="grid mb-10 items-center shadow md:shadow-xl grid-cols-12">
               <div className="col-span-12 md:col-span-7 lg:col-span-8">
-                <img className="shadow w-full md:shadow-xl h-[200px] sm:h-[280px] md:h-[350px] lg:h-[400px]" src={Slide4} alt="Slide_Banner"/>
+                <img className="shadow w-full md:shadow-xl h-[200px] sm:h-[280px] md:h-[350px] lg:h-[450px]" src={Slide4} alt="Slide_Banner"/>
               </div>
               <div className="col-span-12 md:col-span-5 lg:col-span-4 p-5 ">
                 <h2 className="text-2xl font-bold mb-2 md:mb-4">The Legend of Zelda: Breath of the Wild</h2>

@@ -7,7 +7,8 @@ import { AuthContext } from "../auth-provider/AuthProvider";
 const Footer = () => {
   const {isdark} = useContext(AuthContext)
   return (
-    <footer className={` px-5 py-5 ${isdark? 'bg-slate-900 text-slate-200' : 'bg-slate-100'}`}>
+    <footer className={`w-full px-5 py-5 ${isdark? 'bg-slate-900 text-slate-200' : 'bg-slate-100'}`}>
+      <div className="container mx-auto">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
         <div className="col-span-2">
         <Link onClick={()=> window.scrollTo(0,0)} className={`logo flex items-center ${isdark ? 'text-white' : ''}`} to="/">
@@ -47,6 +48,7 @@ const Footer = () => {
             <li><Link className="hover:text-red-700 hover:translate-x-2 inline-block duration-150" to='/myWatchlist'>Game Watchlist</Link></li>
           </ul>
         </div>
+      </div>
       </div>
     </footer>
   );

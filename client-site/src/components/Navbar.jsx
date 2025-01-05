@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <>
       <section className="shadow fixed left-0 w-full z-20 top-0 backdrop-blur bg-gray-50 bg-opacity-15 px-2 md:px-5 py-5">
-        <nav className="flex justify-between items-center">
+        <nav className="flex container mx-auto justify-between items-center">
           <div>
             <Link className={`logo flex items-center ${isdark ? 'text-white' : ''}`} to="/">
              <img className="h-[30px] md:h-[40px] mr-2" src={logoIcon} alt="logo" />
@@ -61,7 +61,9 @@ const Navbar = () => {
                   to="/reviews"
                 >All Reviews</NavLink>
               </li>
-              <li onClick={()=>{
+              {
+                user && <>
+                  <li onClick={()=>{
                 setIsShow(!isShow)
                 window.scrollTo(0,0)
               }}>
@@ -94,6 +96,8 @@ const Navbar = () => {
                   to="/myWatchlist"
                 >Game WatchList</NavLink>
               </li>
+                </>
+              }
             </ul>
           </div>
           <div className="user-info flex gap-5 items-center">
