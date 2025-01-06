@@ -73,7 +73,7 @@ const Reviews = () => {
             <h2 className="text-center mt-10 text-2xl md:text-3xl">There is No Reviews Data</h2>
           }
         </div>
-        <div className="grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+        <div className="grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
           {filterReviews?.map((review) => (
             <ReviewCard review={review} key={review._id}></ReviewCard>
           ))}

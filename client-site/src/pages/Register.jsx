@@ -3,6 +3,7 @@ import { FaRegEye, FaRegEyeSlash } from "react-icons/fa6";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../auth-provider/AuthProvider";
 import toast from "react-hot-toast";
+import bannerBg from '../assets/wave-bg.jpg'
 
 const Register = () => {
   const navigate = useNavigate();
@@ -52,8 +53,9 @@ const Register = () => {
           <span className={`${isdark ? 'text-slate-200' : ''}`}> to Get Started</span>
         </h2>
         <form
+          style={{ backgroundImage: `url(${bannerBg})`}}
           onSubmit={handleSignUp}
-          className={`w-11/12 md:w-10/12 lg:w-8/12 py-8 flex flex-col justify-center items-center border space-y-4 shadow-md mx-auto min-h-[350px] ${isdark? 'bg-slate-300' : ''}`}
+          className={`w-11/12 bg-cover md:w-10/12 lg:w-8/12 py-8 flex flex-col justify-center bg-blend-overlay bg-opacity-30 items-center border space-y-4 shadow-md mx-auto min-h-[350px] ${isdark? 'bg-black' : 'bg-slate-300'}`}
         >
           <div className="grid gap-5 mx-5 sm:grid-cols-2">
             <div>
@@ -62,7 +64,7 @@ const Register = () => {
               </label>
               <br />
               <input
-                className="p-2 w-full bg-slate-100 border outline-none"
+                className="p-2 w-full border outline-none"
                 type="text"
                 placeholder="Your Name"
                 name="name"
@@ -74,7 +76,7 @@ const Register = () => {
                 Photo URL:
               </label>
               <input
-                className="p-2 w-full bg-slate-100 border outline-none"
+                className="p-2 w-full border outline-none"
                 type="text"
                 placeholder="Photo URL"
                 name="photo"
@@ -86,7 +88,7 @@ const Register = () => {
                 Email Address:
               </label>
               <input
-                className="p-2 w-full bg-slate-100 border outline-none"
+                className="p-2 w-full border outline-none"
                 type="email"
                 placeholder="Your Email"
                 name="email"
@@ -99,7 +101,7 @@ const Register = () => {
               </label>
               <div className="relative">
                 <input
-                  className="p-2 w-full bg-slate-100 border outline-none"
+                  className="p-2 w-full border outline-none"
                   type={`${ishidden ? "password" : "text"}`}
                   placeholder="Password"
                   name="password"

@@ -2,6 +2,7 @@ import { useContext, useRef, useState } from "react";
 import { FaGoogle } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../auth-provider/AuthProvider";
+import bannerBg from '../assets/wave-bg.jpg'
 
 const Login = () => {
   const navigate = useNavigate()
@@ -53,8 +54,9 @@ const Login = () => {
          
         </h2>
         <form
+          style={{ backgroundImage: `url(${bannerBg})`}}
           onSubmit={handleSignIn}
-          className={`w-11/12 md:w-8/12  lg:w-1/2 py-10 flex flex-col justify-center items-center border shadow-md mx-auto min-h-[350px] ${isdark ? 'bg-slate-300' : ''}`}
+          className={`w-11/12 md:w-8/12  lg:w-1/2 py-10 flex flex-col justify-center items-center bg-blend-overlay bg-cover bg-opacity-20 border shadow-md mx-auto min-h-[350px] ${isdark ? 'bg-black' : 'bg-slate-200'}`}
         >
           <div className="grid gap-5 mx-5 grid-cols-1">
             <div>
@@ -62,7 +64,7 @@ const Login = () => {
                 Email Address:
               </label>
               <input
-                className="p-2 w-full bg-slate-100 border outline-none"
+                className="p-2 w-full border outline-none"
                 type="email"
                 placeholder="Your Email"
                 name="email"
@@ -75,7 +77,7 @@ const Login = () => {
               </label>
               <div className="relative">
                 <input
-                  className="p-2 w-full bg-slate-100 border outline-none"
+                  className="p-2 w-full border outline-none"
                   type="password"
                   placeholder="Password"
                   name="password"
@@ -100,7 +102,7 @@ const Login = () => {
             </p>
             <div
               onClick={handleSignGoogle}
-              className="flex text-red-600 border w-fit  mx-auto px-5 py-2 shadow-2xl cursor-pointer bg-slate-200 justify-center items-center gap-2 my-5"
+              className="flex text-red-600 border border-red-500 w-fit  mx-auto px-5 py-2 shadow-2xl cursor-pointer bg-slate-200  justify-center items-center gap-2 my-5"
             >
               <FaGoogle />
               <p>Sign With Google</p>

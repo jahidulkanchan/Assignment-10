@@ -8,7 +8,7 @@ const Subscribe = () => {
     e.preventDefault()
     setTimeout(()=>{
       toast.success('Thanks for subscribing')
-    },200)
+    },300)
     e.target.reset()
   }
   return (
