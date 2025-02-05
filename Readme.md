@@ -33,7 +33,10 @@ GamerZone is a gaming review website that serves as a hub for gamers to share re
 1. **Clone the Repository:**
    ```sh
    git clone (https://github.com/jahidulkanchan/GamerZone.git)
-   cd your-repo
+   cd server
+   npm start
+   cd client
+   npm start
    ```
 2. **Install Dependencies:**
    ```sh
