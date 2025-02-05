@@ -1,4 +1,4 @@
-# GamerZone
+# GamerZone(Gaming Review Website)
 
 ## Project Overview
 GamerZone is a gaming review website that serves as a hub for gamers to share reviews, rate games, and create watchlists. With customizable themes, animated text, and full control over user content, it’s a dynamic platform designed to enhance the gaming experience and connect users with a passionate community.
